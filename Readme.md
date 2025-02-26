@@ -2,7 +2,7 @@
 
 * Студент: [Александр Удалов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2083707).
 * Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
-
+* Сайт: [Проект Седона (Модуль 2)](https://udaleks.github.io/2083707-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
