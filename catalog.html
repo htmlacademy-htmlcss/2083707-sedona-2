@@ -8,7 +8,7 @@
   <body>
     <header class="main-header" data-test="header">
       <a class="main-logo" href="index.html">
-        <img class="logo"  src="images/decor/logotype-sedona.svg" width="138" height="64" alt="Логотип Седоны.">
+        <img class="logo"  src="images/decor/logotype-sedona.svg" width="140" height="70" alt="Логотип Седоны.">
       </a>
       <ul class="main-navigation-list">
         <li class="main-navigation-item">
@@ -95,18 +95,22 @@
             </fieldset>
             <fieldset class="price">
               <legend class="price-range">Стоимость, &#8381;:</legend>
-              <label>
-                от
-                <input class="price-range-min" type="number" name="price-range-min" min="0" max="9000" value="0">
-              </label>
-              <label>
-                до
-                <input class="price-range-max" type="number" name="price-range-max" min="0" max="9000" value="9000">
-              </label>
+              <div>
+                <label>
+                  от
+                  <input class="price-range-min" type="number" name="price-range-min" min="0" max="9000" value="0">
+                </label>
+                <label>
+                  до
+                  <input class="price-range-max" type="number" name="price-range-max" min="0" max="9000" value="9000">
+                </label>
+              </div>
               <input class="price-range-selected" type="range" name="price-range-selected" min="0" max="9000" value="7000">
             </fieldset>
-            <button class="link-button button-apply" type="submit">Применить</button>
-            <button class="link-button button-reset" type="reset">Сбросить</button>
+            <div class="hotels-filter-button-container">
+              <button class="link-button button-apply" type="submit">Применить</button>
+              <button class="link-button button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
         <section class="hotels-search-rezult" data-test="catalog">
@@ -119,10 +123,10 @@
               <li class="visualization-item">
                 <a class="visualization-item-cards visualization-item-selected" href="#" aria-label="Показать карточки."></a>
               </li>
-              <li class="visualizaton-item">
+              <li class="visualization-item">
                 <a class="visualization-item-cards-and-list" href="#" aria-label="Показать карточку и список."></a>
               </li>
-              <li class="visualizaton-item">
+              <li class="visualization-item">
                 <a class="visualization-item-list" href="#" aria-label="Показать список."></a>
               </li>
             </ul>
@@ -228,7 +232,7 @@
           </ul>
         </section>
         <section class="subscription subscription-catalog" data-test="subscribe">
-          <h2 class="section-title>Подпишитесь на рассылку"></h2>
+          <h2 class="section-title">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscription-form" action="http://echo.htmlacademy.ru" method="post" aria-label="Форма подписки.">
             <input class="subscription-field" type="email" title="Ваш e-mail" name="subscription-e-mail" placeholder="Ваш e-mail">
@@ -249,7 +253,7 @@
           <a class="youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Переход на сайт Youtube, страница HTMLAcademy."></a>
         </li>
       </ul>
-      <a class="contact-tel" href="tel:+78128121212">+7 (812) 812 12 12</a>
+      <a class="contact-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт HTMLAcademy."></a>
     </footer>
   </body>
