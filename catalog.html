@@ -65,21 +65,21 @@
               <ul class="hotels-infrastructure-list">
                 <li class="hotels-infrastructure-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="Pool" checked>
+                    <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="hotels-infrastructure-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="Parking" checked>
+                    <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="hotels-infrastructure-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi">
+                    <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
                     <span class="control-mark"></span>
                     <span class="control-label">Wi&#8209;Fi</span>
                   </label>
@@ -87,18 +87,18 @@
               </ul>
             </fieldset>
             <fieldset class="hotels-type">
-              <legend class="hotels-type-title">Тип жилья:</legend>
+              <legend class="hotels-type-title">Тип Жилья:</legend>
               <ul class="hotels-type-list">
                 <li class="hotels-type-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="hotel-type" value="Hotel" checked>
+                    <input class="control-input visually-hidden" type="radio" name="hotel-type" value="hotel" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="hotels-type-item">
                   <label class="control">
-                    <input class="control-input visually-hidden" type="radio" name="hotel-type" value="Motel">
+                    <input class="control-input visually-hidden" type="radio" name="hotel-type" value="motel">
                     <span class="control-mark"></span>
                     <span class="control-label">Мотель</span>
                   </label>
@@ -116,11 +116,13 @@
               <legend class="price-range">Стоимость, &#8381;:</legend>
               <div class="price-range-container">
                 <label class="price-range-label">
-                  <input class="price-range-min" type="number" name="price-range-min" min="0" max="9000" value="0" placeholder="0">
+                  <span class="visually-hidden">Введите минимальную стоимость проживания</span>
+                  <input class="price-range-min" type="number" name="price-range-min" min="0" max="9000" value="0" placeholder="0" required>
                   <span class="price-range-text">от</span>
                 </label>
                 <label class="price-range-label">
-                  <input class="price-range-max" type="number" name="price-range-max" min="0" max="9000" value="9000" placeholder="9000">
+                  <span class="visually-hidden">Введите максимальную стоимость проживания</span>
+                  <input class="price-range-max" type="number" name="price-range-max" min="0" max="9000" value="9000" placeholder="9000" required>
                   <span class="price-range-text">до</span>
                 </label>
               </div>
@@ -194,7 +196,7 @@
                   </li>
                 </ul>
               </div>
-              <span class="rating">Рейтинг: 8.5</span>
+              <span class="rating">Рейтинг: 8,5</span>
             </li>
             <li class="result-item">
               <a class="result-image" href="#" tabindex="-1">
@@ -224,7 +226,7 @@
                   </li>
                 </ul>
               </div>
-              <span class="rating">Рейтинг: 9.2</span>
+              <span class="rating">Рейтинг: 9,2</span>
             </li>
             <li class="result-item">
               <a class="result-image" href="#" tabindex="-1">
@@ -251,7 +253,7 @@
                   </li>
                 </ul>
               </div>
-              <span class="rating">Рейтинг: 6.9</span>
+              <span class="rating">Рейтинг: 6,9</span>
             </li>
             <li class="result-item">
               <a class="result-image" href="#" tabindex="-1">
@@ -275,7 +277,7 @@
                   </li>
                 </ul>
               </div>
-              <span class="rating">Рейтинг: 5</span>
+              <span class="rating">Рейтинг: 5,0</span>
             </li>
           </ul>
           <ul class="pagination">
@@ -304,7 +306,8 @@
           <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscription-form" action="http://echo.htmlacademy.ru" method="post">
             <h3 class="visually-hidden">Форма подписки.</h3>
-            <input class="subscription-field" type="email" title="Ваш e-mail" name="subscription-e-mail" placeholder="Ваш e-mail">
+            <input class="subscription-field" type="email" title="Ваш e-mail" name="subscription-e-mail" placeholder="Ваш e-mail" required>
+            <span class="visually-hidden">Введите Ваш e-mail</span>
             <button class="link-button subscription-button" type="submit">Подписаться</button>
           </form>
         </section>

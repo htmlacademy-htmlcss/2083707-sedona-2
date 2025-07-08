@@ -41,7 +41,7 @@
             </li>
           </ul>
         </nav>
-        <a class="link-button user-menu" href="i-want-to-come-here.html" disabled>Хочу сюда!</a>
+        <a class="link-button user-menu" href="i-want-to-come-here.html">Хочу сюда!</a>
       </header>
       <main class="main-container" data-test="main">
         <div class="page-container">
@@ -85,7 +85,7 @@
             </ul>
             <div class="for-tourists">
               <h3 class="visually-hidden">Инфраструктура для туристов</h3>
-              <p class="subtitle">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+              <p class="subtitle">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
               <p>Опытный персонал и качественное обслуживание!</p>
               <ul class="for-tourists-list">
                 <li class="cell">
@@ -117,7 +117,8 @@
             <p class="light-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscription-form" action="http://echo.htmlacademy.ru" method="post">
               <h3 class="visually-hidden">Форма подписки.</h3>
-              <input class="subscription-field" type="email" title="Ваш e-mail" name="subscription-e-mail" placeholder="Ваш e-mail">
+              <input class="subscription-field" type="email" title="Ваш e-mail" name="subscription-e-mail" placeholder="Ваш e-mail" required>
+              <span class="visually-hidden">Введите Ваш e-mail</span>
               <button class="link-button subscription-button" type="submit">Подписаться</button>
             </form>
           </section>
@@ -159,13 +160,17 @@
               <div class="modal-field-wrapper">
                 <label class="modal-search-label" for="arrival-date">Дата Заезда:</label>
                 <input class="search-date" id="arrival-date" type="text" name="arrival-date" placeholder="Укажите дату" value="27 апреля 2020"  required>
-                <button class="calendar" type="button"></button>
+                <button class="calendar" type="button">
+                  <span class="visually-hidden">Календарь. Укажите дату заезда.</span>
+                </button>
               </div>
               <p class="modal-message modal-message-warning">Мы не можем отправить вас в прошлое.</p>
               <div class="modal-field-wrapper">
                 <label class="modal-search-label" for="departure-date">Дата Выезда:</label>
                 <input class="search-date" id="departure-date" type="text" name="departure-date" placeholder="Укажите дату" value="1 сентября 2023" required>
-                <button class="calendar" type="button"></button>
+                <button class="calendar" type="button">
+                  <span class="visually-hidden">Календарь. Укажите дату выезда.</span>
+                </button>
               </div>
               <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
               <div class="modal-field-wrapper">
