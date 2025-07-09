@@ -231,11 +231,7 @@ img {
 }
 
 .hero {
-  margin-bottom: 90px;
-}
-
-.hero-image-container {
-  align-self: stretch;
+  min-width: 100%;
   padding-top: 51px;
   color: #FFFFFF;
   background-image: url("../images/content-index/hero-image-decoration.svg"), url("../images/content-index/index-background.jpg");
@@ -267,7 +263,7 @@ img {
 }
 
 .hero-subtitle {
-  margin: 0;
+  margin: 0 0 90px 0;
   text-align: center;
 }
 
@@ -644,18 +640,19 @@ img {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  letter-spacing: -0.3px;
 }
 
 .control {
   position: relative;
+  display: table;
   padding-left: 36px;
-  font-size: 18px;
-  line-height: 23px;
 }
 
 .control-mark {
   position: absolute;
-  left: 0;
+  top: 1px;
+  left: -1px;
   width: 20px;
   height: 20px;
   box-sizing: border-box;
@@ -705,7 +702,10 @@ img {
 }
 
 .control-label {
-  position: absolute;
+  font-size: 18px;
+  line-height: 23px;
+  padding-bottom: 10px;
+  vertical-align: top;
 }
 
 .control-label:hover {
