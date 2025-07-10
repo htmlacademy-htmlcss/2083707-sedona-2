@@ -1089,21 +1089,23 @@ border-color: #000000;
 }
 
 .result-stars {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  align-self: center;
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/decor/star.svg");
+  background-repeat: space no-repeat;
 }
 
-.result-stars ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.stars-2 {
+  width: 42px;
 }
 
-.result-stars li:not(:last-child) {
-  margin-right: 6px;
+.stars-3 {
+  width: 66px;
+}
+
+.stars-4 {
+  width: 89px;
 }
 
 .pagination {
